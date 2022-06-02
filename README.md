@@ -2,8 +2,12 @@
 
 ## How-to build image
 
+Download and Extract the [CodeReady Workspaces CLI management tool archive](https://developers.redhat.com/products/codeready-workspaces/download) to a `etc` directory as `crwctl`
+
+Then, Run build command below.
+
 ```
-podman build --creds='<user:password>' -t <image_repo>:1.4-custom -f Containerfile .
+podman build --creds='<user:password>' -t <image_repo>:1.5-custom -f Containerfile .
 ```
 
 ## Container Image
