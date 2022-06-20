@@ -17,10 +17,9 @@ spec:
       - /dev/null
       cpuLimit: 400m
       cpuRequest: 100m
-      image: quay.io/kshiraka/custom-web-terminal-tooling-rhel8:1.4-custom
+      image: quay.io/kshiraka/custom-web-terminal-tooling-rhel8:1.5-starterkit
       memoryLimit: 256Mi
       memoryRequest: 128Mi
       mountSources: false
       sourceMapping: /projects
     name: web-terminal-tooling
-
