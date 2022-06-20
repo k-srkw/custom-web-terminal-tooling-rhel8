@@ -1,4 +1,4 @@
-FROM registry.redhat.io/web-terminal-tech-preview/web-terminal-tooling-rhel8:1.4
+FROM registry.redhat.io/web-terminal/web-terminal-tooling-rhel8:1.5
 USER 0
 
 RUN microdnf install -y \
@@ -7,4 +7,3 @@ RUN microdnf install -y \
     microdnf -y clean all
 
 USER 1001
-
