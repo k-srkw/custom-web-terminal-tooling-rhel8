@@ -2,7 +2,7 @@
 
 ## How-to build image
 
-Download and Extract the [CodeReady Workspaces CLI management tool archive](https://developers.redhat.com/products/codeready-workspaces/download) to a `etc` directory as `crwctl`
+Download and Extract the [OpenShift Dev Spaces CLI management tool archive](https://developers.redhat.com/products/openshift-dev-spaces/download) to a `etc` directory as `dsc`
 
 Then, Run build command below.
 

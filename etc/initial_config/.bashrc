@@ -7,7 +7,7 @@ function help_message() {
   KUBECTL_VER=$(kubectl version --client --short | sed 's|Client Version: ||')
   JQ_VER=$(jq --version)
   JQ_VER=${JQ_VER#jq-}
-  CRWCTL_VERSION=$(crwctl version | cut -d " " -f 1 | cut -d "/" -f 2 | cut -d "-" -f 1)
+  DSC_VERSION=$(dsc version | cut -d " " -f 1 | cut -d "/" -f 2 | cut -d "-" -f 1)
 
   echo "Installed tools:"
   cat <<EOF | column -t -s '|'
@@ -21,7 +21,7 @@ subctl|$SUBMARINER_VERSION|Submariner CLI
 odo|$ODO_VER|Red Hat OpenShift Developer CLI
 rhoas|$RHOAS_VERSION|Red Hat OpenShift Application Services CLI
 jq|$JQ_VER|jq
-crwctl|$CRWCTL_VERSION|Red Hat CodeReady Workspaces CLI
+dsc|$DSC_VERSION|Red Hat OpenShift Dev Spaces CLI
 EOF
   echo ""
   echo "To customize this terminal, see 'wtoctl'"
