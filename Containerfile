@@ -13,6 +13,7 @@ RUN \
     COMPDIR=$(pkg-config --variable=completionsdir bash-completion) && \
     # install dsc
     ln -s /opt/dsc/bin/dsc /usr/local/bin/dsc && \
+    dsc autocomplete bash && \
     printf "eval $(dsc autocomplete:script bash)" > $COMPDIR/dsc
 
 # Change permissions to let any arbitrary user
