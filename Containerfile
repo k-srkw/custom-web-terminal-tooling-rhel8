@@ -2,8 +2,8 @@ FROM registry.redhat.io/web-terminal/web-terminal-tooling-rhel8:1.5
 USER 0
 
 RUN microdnf install -y \
-    # install envsubst and tar
-    gettext tar && \
+    # install envsubst, tar, htpasswd, ...
+    gettext tar httpd-tools && \
     microdnf -y clean all
 
 COPY /etc/initial_config /tmp/initial_config
